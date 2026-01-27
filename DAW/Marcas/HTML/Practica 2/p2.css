@@ -1,0 +1,238 @@
+/* --- Fuentes globales --- */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Merriweather:wght@400;700&display=swap');
+
+body {
+    background-color: #0d0d0d;
+    color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.6;
+}
+
+/* --- NAVBAR --- */
+#navbar {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    list-style: none;
+    background-color: #1a1a1a;
+    padding: 15px;
+    margin: 0;
+    border-bottom: 2px solid #ff3b3b;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+#navbar li a {
+    color: #f2f2f2;
+    text-decoration: none;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* --- Secció Inici (Descripció + Banner) --- */
+.inici {
+    background-color: #0f0f0f;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 50px 20px;
+    margin-top: 70px;
+}
+
+#mv_desc {
+    max-width: 850px;
+    margin: 0 auto 30px auto;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    text-align: justify;
+    color: #e0e0e0;
+    background: rgba(255, 255, 255, 0.05);
+    padding: 25px 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+    font-family: 'Merriweather', serif;
+}
+
+#banner_movie {
+    display: block;
+    width: 100%;
+    max-width: 900px;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+}
+
+/* --- Secció Director --- */
+#director {
+    background-color: #111;
+    color: #f2f2f2;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+#director_title {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#director_name {
+    font-size: 1.5rem;
+    color: #ff5050;
+    margin-bottom: 10px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#director_image {
+    width: 220px;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+    display: block;
+    margin: 0 auto 20px auto;
+}
+
+#director_desc {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: justify;
+    line-height: 1.8;
+    color: #ddd;
+    font-family: 'Merriweather', serif;
+}
+
+/* --- Personatges --- */
+.char_container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 30px;
+    justify-items: center;
+    margin-top: 20px;
+}
+
+.char_card {
+    background-color: #2b2b2b;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    width: 100%;
+    max-width: 250px;
+    padding: 20px;
+    text-align: center;
+}
+
+.char_image {
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 12px;
+    margin-bottom: 10px;
+}
+
+.char_name {
+    color: #ff3b3b;
+    font-size: 1.2rem;
+    margin-bottom: 8px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.char_desc {
+    font-size: 0.95rem;
+    color: #ddd;
+    line-height: 1.5;
+    font-family: 'Merriweather', serif;
+}
+
+/* --- Cinemes i Valoracions --- */
+#cinemes {
+    background-color: #111;
+    color: #f2f2f2;
+    padding: 60px 20px;
+    text-align: center;
+    border-radius: 15px;
+    margin-top: 40px;
+}
+
+#cinemes_title {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: #ff5050;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#valoracions_title {
+    font-size: 1.4rem;
+    margin-bottom: 25px;
+    color: #ddd;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.valoracions_container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 30px;
+    justify-items: center;
+    margin-top: 20px;
+}
+
+.valoracion_card {
+    background-color: #2b2b2b;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    width: 100%;
+    max-width: 250px;
+    padding: 25px 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.valoracion_source {
+    color: #ff3b3b;
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.valoracion_score {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #fff;
+    font-family: 'Merriweather', serif;
+}
+
+/* --- Responsiu --- */
+@media (max-width: 700px) {
+    #navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #director {
+        text-align: center;
+    }
+
+    #director_image {
+        width: 60%;
+        max-width: 250px;
+    }
+
+    #mv_desc {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 400px) {
+
+    .char_card,
+    .valoracion_card {
+        max-width: 100%;
+    }
+}

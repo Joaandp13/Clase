@@ -1,0 +1,8 @@
+.terminal {
+    display: block;
+    /* Add more styles as needed, e.g.: */
+    min-height: 50px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    background: #f9f9f9;
+}

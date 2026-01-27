@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Cuadrícula centrada y grande</title>
+
+    <style>
+        /* Centrar el body */
+        body {
+            display: flex;
+            justify-content: center;
+            /* horizontal */
+            align-items: center;
+            /* vertical */
+            height: 100vh;
+            /* ocupar toda la ventana */
+            margin: 0;
+        }
+
+        table {
+            border-collapse: collapse;
+            border: 2px solid black;
+        }
+
+        td {
+            border: 1px solid black;
+            width: 60px;
+            /* más ancho */
+            height: 60px;
+            /* más alto */
+            text-align: center;
+            vertical-align: middle;
+            font-family: monospace;
+            font-size: 20px;
+            /* más grande para el texto */
+        }
+    </style>
+</head>
+
+<body>
+
+    <table id="terminal"></table>
+
+    <script src="tresen.js"></script>
+</body>
+
+</html>

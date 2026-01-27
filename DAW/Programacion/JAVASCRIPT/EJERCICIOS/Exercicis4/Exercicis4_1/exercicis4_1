@@ -1,0 +1,6 @@
+"use strict";
+
+boolean resposta = 0; // Incorrecta (no es pot assignar int a boolean)
+double sou = 1000; // Correcta (un enter sempre es pot convertir a real)
+float lletra = 'a'; // Correcta (un char és similar a un short o int):
+// només cal saber el codi (valor enter) del caràcter 'a'

@@ -1,0 +1,14 @@
+# IntelliJ / Java
+.idea/
+*.iml
+out/
+*.class
+
+#Node / JS
+node_modules/
+
+# Python
+__pycache__/
+
+#Temporales
+.DS_Store

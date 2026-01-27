@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "../../../Marcas/HTML/Test"
+		},
+		{
+			"path": "../../.."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "clase"
+	}
+}
