@@ -6,7 +6,12 @@ public class Peix extends Animal{
         super(nom);
         this.profunditat = profunditat;
     }
-    public int getProfunditat(){
+
+    public int getProfunditat() {
         return profunditat;
+    }
+
+    public void setProfunditat(int profunditat) {
+        this.profunditat = profunditat;
     }
 }
