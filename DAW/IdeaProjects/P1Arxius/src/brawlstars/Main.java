@@ -29,6 +29,11 @@ public class Main{
                 switch (opcio) {
                     case 1:
                         func1();
+                        break;
+                    case 2:
+                        func2();
+                        break;
+                    case 3:
                 }
             }catch(Exception e){System.out.println("Error: "+e);}
         }
@@ -39,9 +44,24 @@ public class Main{
             FileUtils.deleteDirectory(brawlers);
             System.out.println("Directori esborrat correctament.");
         }
-        else{System.out.println("No existeix el directori. ");}
+        else{throw new Exception("No existeix el directori. ");}
     }
     public static void func2()throws Exception{
+        File Tank = new File("./Brawlers/Tank");
+        File Legendary = new File (Tank+"/Legendary");
+        File Epic = new File (Tank+"/Epic");
+        if(Tank.exists()){
+            System.out.println("La carpeta Tank ja existeix. ");
+            if(FileUtils.directoryContains(Tank,Legendary)){
+                boolean legflag = true;
+            }
+            else if(FileUtils.directoryContains(Tank,Epic)){
+                boolean epicflag = true;
+            }
+            else {FileUtils.forceMkdir(Tank);
+            F}
+        }
+
 
     }
 
