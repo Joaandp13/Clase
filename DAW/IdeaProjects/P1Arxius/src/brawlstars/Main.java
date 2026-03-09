@@ -72,10 +72,6 @@ public class Main{
                                                               
             """);
                         running = false;
-                        for(int i= 0;i<3;++i){
-                            Thread.sleep(600);
-                            System.out.println(".");
-                        }
                         break;
 
                 }
@@ -168,9 +164,4 @@ public class Main{
             System.out.println("Fitxer creat: " + a.getPath());
         }
     }
-    }
-
-
-
-
-
+}
