@@ -7,9 +7,9 @@ import java.util.ArrayList;
 import java.util.Scanner;
 public class Main{
     public static Scanner sc = new Scanner(System.in);
-    static boolean running = true;
-    public static void main(String[] args){
 
+    public static void main(String[] args){
+        boolean running=true;
         while(running) {
             System.out.println(
                     """
@@ -60,6 +60,10 @@ public class Main{
                         File[] arxius = func4A();
 
                         func4B(ruta.getPath(), arxius);
+                        break;
+                    case 5:
+                        sc.nextLine();
+                        func5();
                         break;
                     case 0:
                         System.out.println("""
@@ -160,8 +164,36 @@ public class Main{
                 throw new Exception("El fitxer " + nom.getName() + " ja existeix.");
             }
 
-            FileUtils.forceMkdir(a);
-            System.out.println("Fitxer creat: " + a.getPath());
+            if(a.createNewFile()){
+                System.out.println("Fitxer creat: " + a.getPath());
+            }
+
+
+        }
+    }
+
+    public static void func5()throws Exception{
+        boolean running = true;
+        while(running){
+            System.out.println("Introdueix la ruta del arxiu que vols moure/renombrar");
+            File source = new File(sc.nextLine());
+            if(!source.exists()){
+                throw new Exception ("L'arxiu origen no existeix. ");
+            }
+            else {
+                sc.nextLine();
+                System.out.println("Introdueix la ruta a la que vols moure l'arxiu \n(amb nom del arxiu si vols renombrar-lo");
+                File dest = new File(sc.nextLine());
+                sc.nextLine();
+                if(!dest.getParentFile().exists()){
+                    throw new Exception("El directori pare de la ruta especificada no existeix. ");
+                }
+                else{
+                    FileUtils.moveFile(source,dest);
+                    System.out.println("Fitxer mogut correctament.");
+                }
+            }
+
         }
     }
 }
