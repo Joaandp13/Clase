@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <style>
+        @keyframes estiraAmunt {
+          0%   { transform: scaleY(1); }
+          50%  { transform: scaleY(2); }
+          100% { transform: scaleY(1); }
+        }
+
+        .estira-amunt {
+          animation: estiraAmunt 2s ease-in-out infinite;
+          transform-origin: bottom;
+        }
+
+
+        @keyframes estiraCostats {
+          0%   { transform: scaleX(1); }
+          50%  { transform: scaleX(2); }
+          100% { transform: scaleX(1); }
+        }
+
+        .estira-costats {
+          animation: estiraCostats 1.5s ease-in-out infinite;
+        }
+
+
+        @keyframes gira {
+          0%   { transform: rotate(0deg); }
+          100% { transform: rotate(360deg); }
+        }
+
+        .gira {
+          animation: gira 2s linear infinite;
+        }
+
+
+        @keyframes esquerraAdreta {
+          0%   { transform: translateX(0); }
+          50%  { transform: translateX(200px); }
+          100% { transform: translateX(0); }
+        }
+
+        .esquerra-dreta {
+          animation: esquerraAdreta 2s ease-in-out infinite;
+        }
+
+
+        @keyframes pulse {
+          0%   { transform: scale(1); }
+          50%  { transform: scale(1.3); }
+          100% { transform: scale(1); }
+        }
+
+        .pulse {
+          animation: pulse 1s ease-in-out infinite;
+        }
+
+
+        @keyframes rebota {
+          0%   { transform: translateY(0); }
+          40%  { transform: translateY(-60px); }
+          60%  { transform: translateY(-60px); }
+          100% { transform: translateY(0); }
+        }
+
+        .rebota {
+          animation: rebota 1.2s cubic-bezier(0.36, 0, 0.66, -0.56) infinite;
+        }
+
+
+        @keyframes fade {
+          0%   { opacity: 1; }
+          50%  { opacity: 0; }
+          100% { opacity: 1; }
+        }
+
+        .fade {
+          animation: fade 2s ease-in-out infinite;
+        }
+
+        /* TRANSFORMACIONS */
+        .rotat {
+          transform: rotate(45deg);
+        }
+
+        .inclinat {
+          transform: skewX(20deg);
+        }
+
+        .desplacat {
+          transform: translateX(80px);
+        }
+
+        /* TRANSICIONS */
+        .trans-escala {
+          transition: transform 0.4s ease;
+        }
+        .trans-escala:hover {
+          transform: scale(2);
+        }
+
+        .trans-gir {
+          transition: transform 0.4s ease;
+        }
+        .trans-gir:hover {
+          transform: rotate(180deg);
+        }
+
+        .trans-desplaca {
+          transition: transform 0.4s ease;
+        }
+        .trans-desplaca:hover {
+          transform: translateX(100px);
+        }
+    </style>
+</head>
+<body>
+    <h1>1.Estirament</h1>
+    <h2>Adalt i avall.</h2>
+    <div style="height: 200px; display: flex; align-items: flex-end;">
+        <img src="honse.png" class="estira-amunt" height="100px" width="100px">
+    </div>
+
+    <h2>Costats</h2>
+    <div style="height: 100px; display: flex; align-items: flex-end;">
+        <img src="honse.png" class="estira-costats" height="100px" width="100px">
+    </div>
+
+    <h2>Bategar</h2>
+    <div style="height:100px; display: flex; align-items: flex-end;">
+        <img src="honse.png" class="pulse" height="100px">
+    </div>
+
+
+    <h1>2.Moviment</h1>
+    <h2>Girar</h2>
+    <div style="height:100px; display: flex; align-items: flex-end;">
+        <img src="honse.png" class="gira" height="100px">
+    </div>
+
+    <h2>Esquerra a Dreta</h2>
+    <div style="height:100px; display: flex; align-items: flex-end;">
+        <img src="honse.png" class="esquerra-dreta" height="100px">
+    </div>
+
+
+    <h1>3.Transformacions</h1>
+    <h2>Rotat 45°</h2>
+    <div style="height:100px; display: flex; align-items: flex-end;">
+        <img src="honse.png" class="rotat" height="100px">
+    </div>
+
+    <h2>Inclinat</h2>
+    <div style="height:100px; display: flex; align-items: flex-end;">
+        <img src="honse.png" class="inclinat" height="100px">
+    </div>
+
+    <h2>Desplaçat</h2>
+    <div style="height:100px; display: flex; align-items: flex-end;">
+        <img src="honse.png" class="desplacat" height="100px">
+    </div>
+
+
+    <h1>4.Transicions (passa el ratolí per sobre)</h1>
+    <h2>Escala</h2>
+    <div style="height:100px; display: flex; align-items: flex-end;">
+        <img src="honse.png" class="trans-escala" height="100px">
+    </div>
+
+    <h2>Gir</h2>
+    <div style="height:100px; display: flex; align-items: flex-end;">
+        <img src="honse.png" class="trans-gir" height="100px">
+    </div>
+
+    <h2>Desplaçament</h2>
+    <div style="height:100px; display: flex; align-items: flex-end;">
+        <img src="honse.png" class="trans-desplaca" height="100px">
+    </div>
+
+
+</body>
+</html>

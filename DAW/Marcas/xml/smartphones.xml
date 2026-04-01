@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="smartphones.xsl"?>
+<smartphones>
+    <smartphone>
+        <model>iPhone 15 Pro</model>
+        <sistema_operatiu>
+            <nom>iOS</nom>
+            <versio>17</versio>
+        </sistema_operatiu>
+        <dimensions>
+            <alcada unitat="mm">147,6</alcada>
+            <amplada unitat="mm">70,6</amplada>
+            <gruix unitat="mm">8,6</gruix>
+        </dimensions>
+        <pes unitat="g">232</pes>
+        <resolucio unitat="px">2556x1179</resolucio>
+        <processador>Apple A17 Bionic</processador>
+        <memoriaRAM unitat="GB">8</memoriaRAM>
+        <preus>
+            <preu capacitat="128GB" unitat="EUR">1229</preu>
+            <preu capacitat="256GB" unitat="EUR">1359</preu>
+            <preu capacitat="512GB" unitat="EUR">1609</preu>
+            <preu capacitat="1024GB" unitat="EUR">1859</preu>
+        </preus>
+    </smartphone>
+    <smartphone>
+        <model>Nothing Phone (2)</model>
+        <sistema_operatiu>
+            <nom>Android</nom>
+            <versio>13</versio>
+        </sistema_operatiu>
+        <dimensions>
+            <alcada unitat="mm">162,1</alcada>
+            <amplada unitat="mm">76,4</amplada>
+            <gruix unitat="mm">8,6</gruix>
+        </dimensions>
+        <pes unitat="g">201</pes>
+        <resolucio unitat="px">2412x1080</resolucio>
+        <processador>Qualcomm Snapdragon 8+ Gen 1</processador>
+        <memoriaRAM unitat="GB">8</memoriaRAM>
+        <preus>
+            <preu capacitat="128GB" unitat="EUR">649</preu>
+            <preu capacitat="256GB" unitat="EUR">699</preu>
+            <preu capacitat="512GB" unitat="EUR">799</preu>
+        </preus>
+    </smartphone>
+</smartphones>

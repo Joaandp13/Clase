@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<smartphones>
+    <smartphone>
+        <model>iPhone 15 Pro</model>
+        <sistema_operatiu>
+            <nom>iOS</nom>
+            <versio>17</versio>
+        </sistema_operatiu>
+        <dimensions>
+            <alcada unitat="mm">147,6</alcada>
+            <amplada unitat="mm">70,6</amplada>
+            <gruix unitat ="mm">8,6</gruix>
+        </dimensions>
+        <pes unitat="g"></pes>
+    </smartphone>
+</smartphones>

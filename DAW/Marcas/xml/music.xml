@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="playlists-style.xsl"?>
+<playlists>
+    <playlist nom="Spiders">
+        <track valor="7">
+            <nom>Smells like teen spirit</nom>
+            <autor>Nirvana</autor>
+            <duracio format="mm:ss">5:01</duracio>
+        </track>
+        <track valor="18">
+            <nom>Take Me Out</nom>
+            <autor>Franz Ferdinand</autor>
+            <duracio format="mm:ss">3:57</duracio>
+        </track>
+    </playlist>
+    <playlist nom="Shimishimiye">
+        <track valor="1">
+            <nom>YABABAINA</nom>
+            <autor>さたぱんP</autor>
+            <duracio format="mm:ss">2:39</duracio>
+        </track>
+        <track valor="2">
+            <nom>LEMON MELON COOKIE</nom>
+            <autor>TAK, Hatsune Miku</autor>
+            <duracio format="mm:ss">2:33</duracio>
+        </track>
+    </playlist>
+</playlists>

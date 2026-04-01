@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      overflow: hidden;
+      height: 100vh;
+      width: 100vw;
+    }
+
+    #escena {
+      width: 100%;
+      height: 100vh;
+      background-image: url('fons.jpg');
+      background-size: cover;
+      background-position: center;
+      position: relative;
+    }
+
+    .personatge {
+      position: absolute;
+      bottom: 10%;
+      height: 250px;
+      cursor: pointer;
+      transition: transform 0.3s ease;
+    }
+
+    #p1 { left: 5%; transform: scaleX(1); }
+    #p2 { left: 25%; transform: scaleX(1); }
+    #p3 { right: 25%; transform: scaleX(-1); }
+    #p4 { right: 5%; transform: scaleX(-1); }
+
+    #p1:hover {
+      transform: scaleX(1) translateX(80px) translateY(-60px) rotate(-10deg);
+    }
+
+    #p2:hover {
+      transform: scaleX(1) translateX(60px) skewX(-15deg);
+    }
+
+    #p3:hover {
+      transform: scaleX(-1) translateX(80px) translateY(-60px) rotate(10deg);
+    }
+
+    #p4:hover {
+      transform: scaleX(-1) translateX(60px) skewX(15deg);
+    }
+
+  </style>
+</head>
+<body>
+  <div id="escena">
+    <audio src="musica.mp3" autoplay loop></audio>
+    <img id="p1" class="personatge" src="personatge1.png">
+    <img id="p2" class="personatge" src="personatge2.png">
+    <img id="p3" class="personatge" src="personatge3.png">
+    <img id="p4" class="personatge" src="personatge4.png">
+  </div>
+</body>
+</html>
